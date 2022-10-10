@@ -11,7 +11,7 @@ function ComponenteB(estado) {
     }
     return (
         <div>
-            <h3> {conectado === false ? 'Contacto Desconectado' : 'Contacto En Linea'}</h3>
+            <h3> {conectado === false ? 'Contacto No Disponible' : 'Contacto En Linea'}</h3>
             <button onClick = {() => setConectado(!conectado)}>
                 Estado
             </button>
