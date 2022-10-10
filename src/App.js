@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ComponenteA from './components/pure/componenteA'
-
+import ComponenteA from './components/componenteA';
 
 function App() {
   const contactoPrueba = {

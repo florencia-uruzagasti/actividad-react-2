@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Contacto } from '../models/contacto.class'
+import { Contacto } from '../models/contacto.class';
 import ComponenteB from './componenteB'
 
 
@@ -16,7 +16,7 @@ function componenteA({contacto}){
             <h3>
                 Email: {contacto.email}
             </h3>
-            <componenteB estado = { true } />
+            <ComponenteB estado = { true } />
         </div>
     );
 }
