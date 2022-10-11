@@ -6,15 +6,13 @@ import { Contacto } from '../models/contacto.class'
 function ComponenteB(estado) {
     const [conectado, setConectado] = useState(estado);
 
-    const estadoDeLinea = () => {
+    /* const estadoDeLinea = () => {
         setConectado(conectado === false ? 'Conectado' : 'Desconectado')
-    }
+    } */
     return (
         <div>
             <h3> {conectado === false ? 'Contacto No Disponible' : 'Contacto En Linea'}</h3>
-            <button onClick = {() => setConectado(!conectado)}>
-                Estado
-            </button>
+            <button onClick={() => setConectado(!conectado)}>{conectado === false ? 'Conectado' : 'Desconectado'}</button>
         </div>
     );
 }
